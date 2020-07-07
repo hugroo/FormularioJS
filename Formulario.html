@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/bootstrap.bundle.js" defer></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script src="js/script.js" defer></script>
+</head>
+<body class="container-fluid w-43">
+<div class="shadow card text-center m-auto mt-5">
+    <div class="card-header">
+        <h2>Formulario</h2>
+        <small class="text-muted">Con validación utilizando Javascript y Bootstrap 5</small>
+    </div>
+    <div class="card-body">
+        <form class="row g-3 justify-content-center" id="formulario">
+            <div class="col-12">
+                <div class="shadow-sm input-group input-group-sm">
+                    <span class="input-group-text">Nombre</span>
+                    <input type="text" class="form-control" id="nombre" minlength="3" name="nombre" required>
+                </div>
+            </div>
+            <div class="invalid text-left mt-1 ml-3" id="errorNombre"></div>
+            <div class="col-12 apellido">
+                <div class="shadow-sm input-group input-group-sm">
+                    <span class="input-group-text" id="Apellido">Apellido</span>
+                    <input type="text" class="form-control" minlength="3" name="apellido" required>
+                </div>
+            </div>
+            <div class="invalid text-left mt-1 ml-3" id="errorApellido"></div>
+            <div class="col-12 edad">
+                <div class="shadow-sm input-group input-group-sm">
+                    <span class="input-group-text" id="Edad">Edad</span>
+                    <input type="number" class="form-control" max="150" name="edad" required>
+                </div>
+            </div>
+            <div class="invalid text-left mt-1 ml-3" id="errorEdad"></div>
+            <div class="col-12 email">
+                <div class="shadow-sm input-group input-group-sm">
+                    <span class="input-group-text" id="Email">Email</span>
+                    <input type="email" class="form-control" name="email" required>
+                </div>
+            </div>
+            <div class="invalid text-left mt-1 ml-3" id="errorEmail"></div>
+            <div class="col-12 contraseña">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-text" id="Contraseña">Contraseña</span>
+                    <input type="password" class="form-control" minlength="8" name="contraseña" required>
+                </div>
+            </div>
+            <div class="invalid text-left mt-1 ml-3" id="errorContraseña"></div>
+            <div class="col-12 input-texto repcontraseña">
+                <div class="shadow-sm input-group input-group-sm">
+                    <span class="input-group-text" id="ConfContraseña">Repita contraseña</span>
+                    <input type="password" class="form-control" minlength="8" name="repContraseña" required>
+                </div>
+            </div>
+            <div class="invalid text-left mt-1 ml-3" id="errorContraseñaRep"></div>
+            <div class="card-footer d-flex flex-row justify-content-evenly">
+                <button type="reset" id="Limpiar" class="btn btn-secondary ">Limpiar</button>
+                <button type="submit" id="Enviar" class="btn btn-primary ">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="exito alert alert-success mt-5" role="alert">
+    <h4 class="alert-heading">Registro exitoso!</h4>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
+</body>
+</html>

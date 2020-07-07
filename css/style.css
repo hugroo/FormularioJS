@@ -1,0 +1,26 @@
+.w-43{
+    width: 43%;
+}
+
+
+@media (max-width: 576px) {
+
+    .w-43{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 577px){
+    .w-43{
+        width: 75%;
+    }
+}
+
+.invalid{
+    width: 100%;
+    font-size: 0.875em;
+    color: #dc3545;
+}
+
+
+
